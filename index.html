@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Doomverse - Todo sobre la legendaria franquicia de videojuegos DOOM">
+  <meta name="keywords" content="Doom, Doom Slayer, FPS, videojuegos, id Software">
+  <title>Doomverse | El infierno te espera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="img/doom-icon.png" type="image/png">
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-list">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#historia">HISTORIA</a></li>
+      <li><a href="#evolucion">EVOLUCIÓN</a></li>
+      
+      <li class="nav-image">
+        <img src="img/Doomverse.png" alt="Doomverse - Logo principal" width="180" height="40">
+      </li>
+
+      <li><a href="#tienda">TIENDA</a></li>
+      <li><a href="#galeria">GALERÍA</a></li>
+      <li><a href="#contacto" id="contactoBtn">CONTACTO</a></li>
+    </ul>
+  </nav>
+
+  <section class="home" id="home">
+  <div class="home-content">
+    <div class="trailer-button-container">
+      <a href="https://www.youtube.com/watch?v=XiJe4KNTsNM" 
+         class="trailer-button doom-pulse" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         aria-label="Ver tráiler de DOOM: The Dark Ages">
+        TRAILER DOOM DARK AGES
+      </a>
+    </div>
+  </div>
+</section>
+  <section class="home-info">
+    <div class="home-info-box">
+      <h2>¡BIENVENIDO AL INFIERNO DE DOOM!</h2>
+      <p>
+        Estás a punto de sumergirte en uno de los universos más legendarios de la 
+        historia de los videojuegos. Aquí, en Doomverse, celebramos la intensa 
+        acción, la adrenalina imparable y la épica batalla entre el Doom Slayer y 
+        las fuerzas demoníacas del infierno.
+      </p>
+    </div>
+  </section>
+
+  <section class="historia" id="historia">
+    <div class="historia-content">
+      <div class="historia-texto">
+        <h2>HISTORIA</h2>
+        <p>
+          Doom es una franquicia de videojuegos de disparos en primera persona creada por id Software, lanzada en 1993.<br>
+          Sigue a un marine espacial, Doomguy, que lucha contra hordas de demonios
+          en Marte y sus lunas.
+        </p>
+      </div>
+      <div class="historia-imagen" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <section class="evolucion" id="evolucion">
+    <h2>EVOLUCIÓN</h2>
+    <div class="carrusel-container">
+      <div class="carrusel" id="carrusel">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <div class="juego">
+  <img src="img/Doom Caratula 1.webp" alt="DOOM (1993)" width="180" height="260" loading="lazy">
+  <a href="#" onclick="openVideoModal('https://www.youtube.com/watch?v=-4-xswoPRpo')" class="juego-link">
+    <p><strong>DOOM</strong><br><small>10 de diciembre 1993</small></p>
+  </a>
+</div>
+          <div class="juego">
+            <img src="img/Doom Caratula 2.webp" alt="DOOM II" width="180" height="260" loading="lazy">
+			  <a href="#" onclick="openVideoModal('https://www.youtube.com/watch?v=-4-xswoPRpo')" class="juego-link">
+            <p><strong>DOOM II</strong><br><small>30 de septiembre 1994</small></p>
+				  </a>
+          </div>
+          <div class="juego">
+            <img src="img/Doom Caratula 3.avif" alt="DOOM 64" width="180" height="260" loading="lazy">
+			  <a href="#" onclick="openVideoModal('https://www.youtube.com/watch?v=mtvHGrPyJw8')" class="juego-link">
+            <p><strong>DOOM 64</strong><br><small>31 de marzo 1994</small></p>
+				  </a>
+          </div>
+          <div class="juego">
+            <img src="img/Doom Caratula 4.jpg" alt="DOOM III" width="180" height="260" loading="lazy">
+			  <a href="#" onclick="openVideoModal('https://www.youtube.com/watch?v=Eo69OsqA3Wc')" class="juego-link">
+            <p><strong>DOOM III</strong><br><small>3 de agosto 2004</small></p>
+				  </a>
+          </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div class="juego">
+            <img src="img/Doom Caratula 5.webp" alt="DOOM (2016)" width="180" height="260" loading="lazy">
+			  <a href="#" onclick="openVideoModal('https://www.youtube.com/watch?v=RO90omga8D4')" class="juego-link">
+            <p><strong>DOOM (2016)</strong><br><small>13 de mayo 2016</small></p>
+				  </a>
+          </div>
+          <div class="juego">
+            <img src="img/Doom Caratula 6.webp" alt="DOOM Eternal" width="180" height="260" loading="lazy">
+			  <a href="#" onclick="openVideoModal('https://www.youtube.com/watch?v=_UuktemkCFI')" class="juego-link">
+            <p><strong>DOOM Eternal</strong><br><small>20 de marzo 2020</small></p>
+				  </a>
+          </div>
+          <div class="juego">
+            <img src="img/Doom Caratula 7.jpg" alt="DOOM: The Dark Ages" width="180" height="260" loading="lazy">
+			  <a href="#" onclick="openVideoModal('https://www.youtube.com/watch?v=P4wvc_zDHpA')" class="juego-link">
+            <p><strong>DOOM: The Dark Ages</strong><br><small>13 de mayo 2025</small></p>
+				  </a>
+          </div>
+          <div class="juego placeholder" aria-hidden="true"></div> <!-- Espacio vacío para mantener alineación -->
+        </div>
+      </div>
+      <button id="prevBtn" class="flecha-btn" aria-label="Anterior"><span aria-hidden="true">&#10094;</span></button>
+      <button id="nextBtn" class="flecha-btn" aria-label="Siguiente"><span aria-hidden="true">&#10095;</span></button>
+    </div>
+  </section>
+	<section class="tienda" id="tienda">
+  <div class="tienda-content">
+    <div class="tienda-texto">
+      <h2>TIENDA</h2>
+      <p>
+        Demuestra tu devoción al Doom Slayer con
+        merchandising oficial,
+        ediciones de colección y
+        contenido exclusivo.
+        Desde camisetas y figuras hasta ediciones limitadas de los juegos,
+        aquí encontrarás todo lo que un verdadero Slayer necesita
+        para llevar el infierno a casa
+      </p>
+    </div>
+    
+    <div class="tienda-mosaico">
+      <!-- Producto 1 -->
+      <div class="producto">
+        <div class="producto-imagen" style="background-image: url('img/Doom Merch 5.webp')"></div>
+        <h3>RÉPLICA DEL CASCO DOOM SLAYER</h3>
+        <a href="https://gear.bethesda.net/products/doom-the-dark-ages-wearable-helmet-replica-helmet-bundle" class="comprar-btn" target="_blank">COMPRAR AHORA</a>
+      </div>
+      
+      <!-- Producto 2 -->
+      <div class="producto">
+        <div class="producto-imagen" style="background-image: url('img/Doom Merch 3.webp')"></div>
+        <h3>FIGURA COLECCIONABLE</h3>
+        <a href="https://gear.bethesda.net/products/doom-eternal-slayer-statue" class="comprar-btn" target="_blank">COMPRAR AHORA</a>
+      </div>
+      
+      <!-- Producto 3 -->
+      <div class="producto">
+        <div class="producto-imagen" style="background-image: url('img/Doom Merch 1.webp')"></div>
+        <h3>EDICIÓN COLECCIONISTA</h3>
+        <a href="https://international.gear.bethesda.net/es/products/doom-the-dark-ages-collectors-bundle" class="comprar-btn" target="_blank">COMPRAR AHORA</a>
+      </div>
+      
+      <!-- Producto 4 -->
+      <div class="producto">
+        <div class="producto-imagen" style="background-image: url('img/Doom Merch 4.webp')"></div>
+        <h3>VINILO DOOM SOUNDTRACK</h3>
+        <a href="https://gear.bethesda.net/products/doom-deluxe-double-vinyl-record" class="comprar-btn" target="_blank">COMPRAR AHORA</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="galeria" id="galeria">
+  <h2>GALERÍA</h2>
+  <div class="galeria-container">
+    <button class="galeria-btn prev-btn" aria-label="Imagen anterior">&#10094;</button>
+    
+    <div class="galeria-slider-container">
+      <div class="galeria-slider">
+        <!-- Imágenes de la galería -->
+        <div class="galeria-slide">
+          <img src="img/Doom Galeria 10.jpg" alt="Doom" loading="lazy">
+        </div>
+        <div class="galeria-slide">
+          <img src="img/Doom Galeria 1.PNG" alt="Doom 1 Gameplay" loading="lazy">
+        </div>
+       
+        <div class="galeria-slide">
+          <img src="img/Doom Galeria 3.PNG" alt="Doom 64 Gameplay" loading="lazy">
+        </div>
+		  <div class="galeria-slide">
+          <img src="img/Doom Galeria 4.PNG" alt="Doom 3 Gameplay" loading="lazy">
+        </div>
+		  <div class="galeria-slide">
+          <img src="img/Doom Galeria 5.PNG" alt="Doom 2016 screenshot" loading="lazy">
+        </div>
+		  <div class="galeria-slide">
+          <img src="img/Doom Galeria 6.PNG" alt="Doom 2016 screenshot" loading="lazy">
+        </div>
+		  <div class="galeria-slide">
+          <img src="img/Doom Galeria 8.jpg" alt="Doom Eternal screenshot" loading="lazy">
+        </div>
+		  <div class="galeria-slide">
+          <img src="img/Doom galeria 9.jpg" alt="Doom TDA screenshot" loading="lazy">
+        </div>
+		  <div class="galeria-slide">
+          <img src="img/Doom Galeria 7.PNG" alt="Doom 2016 screenshot" loading="lazy">
+        </div>
+      </div>
+    </div>
+    
+    <button class="galeria-btn next-btn" aria-label="Siguiente imagen">&#10095;</button>
+  </div>
+
+  <!-- Indicadores -->
+  <div class="galeria-indicadores"></div>
+</section>	
+	
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="img/Doomverse.png" alt="Doomverse" loading="lazy">
+    </div>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#historia">Historia</a>
+      <a href="#evolucion">Evolución</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <div class="footer-legal">
+      <p>&copy; 2025 Doomverse. No afiliado a id Software o Bethesda.</p>
+      <p>Todos los derechos de DOOM pertenecen a sus respectivos dueños.</p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const carrusel = document.getElementById('carrusel');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+    let currentSlide = 0;
+    const totalSlides = 2;
+
+    // Crear indicadores
+    const indicatorsContainer = document.createElement('div');
+    indicatorsContainer.className = 'carrusel-indicators';
+    document.querySelector('.carrusel-container').appendChild(indicatorsContainer);
+
+    for (let i = 0; i < totalSlides; i++) {
+      const indicator = document.createElement('div');
+      indicator.className = 'indicator';
+      if (i === currentSlide) indicator.classList.add('active');
+      indicator.addEventListener('click', () => {
+        currentSlide = i;
+        updateCarrusel();
+      });
+      indicatorsContainer.appendChild(indicator);
+    }
+
+    function updateCarrusel() {
+      carrusel.style.transform = `translateX(-${currentSlide * 100}%)`;
+      
+      // Actualizar botones
+      prevBtn.style.display = currentSlide > 0 ? 'block' : 'none';
+      nextBtn.style.display = currentSlide < totalSlides - 1 ? 'block' : 'none';
+      
+      // Actualizar indicadores
+      document.querySelectorAll('.indicator').forEach((ind, index) => {
+        ind.classList.toggle('active', index === currentSlide);
+      });
+    }
+
+    // Event listeners
+    nextBtn.addEventListener('click', () => {
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateCarrusel();
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateCarrusel();
+      }
+    });
+
+    // Inicializar
+    updateCarrusel();
+
+    // Efecto scroll suave para navegación
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+	<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Elementos de la galería
+  const slider = document.querySelector('.galeria-slider');
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+  const indicadoresContainer = document.querySelector('.galeria-indicadores');
+  const slides = document.querySelectorAll('.galeria-slide');
+
+  let currentIndex = 0;
+  let autoSlideInterval;
+  const slideInterval = 5000; // 5 segundos
+
+  // Crear indicadores
+  function createIndicators() {
+    slides.forEach((_, index) => {
+      const indicador = document.createElement('div');
+      indicador.classList.add('galeria-indicador');
+      if (index === 0) indicador.classList.add('active');
+      
+      indicador.addEventListener('click', () => {
+        goToSlide(index);
+      });
+      
+      indicadoresContainer.appendChild(indicador);
+    });
+  }
+
+  // Actualizar estado
+  function updateSlider() {
+  let offset = 0;
+  const gap = 30; // MISMO GAP QUE EN CSS
+
+  for (let i = 0; i < currentIndex; i++) {
+    offset += slides[i].offsetWidth + gap; // sumamos también el espacio
+  }
+
+  slider.style.transform = `translateX(-${offset}px)`;
+
+  document.querySelectorAll('.galeria-indicador').forEach((ind, index) => {
+    ind.classList.toggle('active', index === currentIndex);
+  });
+
+  prevBtn.style.display = slides.length > 1 ? 'flex' : 'none';
+  nextBtn.style.display = slides.length > 1 ? 'flex' : 'none';
+}
+
+  // Navegación
+  function goToSlide(index) {
+    currentIndex = index;
+    updateSlider();
+    resetAutoSlide();
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlider();
+  }
+
+  function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    updateSlider();
+  }
+
+  // Auto-desplazamiento
+  function startAutoSlide() {
+    autoSlideInterval = setInterval(nextSlide, slideInterval);
+  }
+
+  function resetAutoSlide() {
+    clearInterval(autoSlideInterval);
+    startAutoSlide();
+  }
+
+  // Event listeners
+  nextBtn.addEventListener('click', () => {
+    nextSlide();
+    resetAutoSlide();
+  });
+
+  prevBtn.addEventListener('click', () => {
+    prevSlide();
+    resetAutoSlide();
+  });
+
+  // Pausar al interactuar
+  slider.addEventListener('mouseenter', () => {
+    clearInterval(autoSlideInterval);
+  });
+
+  slider.addEventListener('mouseleave', startAutoSlide);
+
+  window.addEventListener('resize', updateSlider); // Importante: actualizar tamaño si cambia ventana
+
+  // Inicializar
+  createIndicators();
+  updateSlider();
+  startAutoSlide();
+});
+</script>
+
+	<script>
+  // Efecto mejorado de navbar al hacer scroll
+  const navbar = document.querySelector('.navbar');
+  let lastScroll = 0;
+  let scrollTimeout;
+  
+  // Configuración ajustable
+  const SCROLL_DELAY = 2000; // 2 segundos antes de desaparecer
+  const SCROLL_THRESHOLD = 100; // Scroll mínimo para activar
+  
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    clearTimeout(scrollTimeout);
+    
+    if (currentScroll <= 50) {
+      // Top de la página - mostrar siempre
+      navbar.classList.remove('hidden');
+    } else if (currentScroll > lastScroll && currentScroll > SCROLL_THRESHOLD) {
+      // Scroll hacia abajo - ocultar con delay
+      scrollTimeout = setTimeout(() => {
+        navbar.classList.add('hidden');
+      }, SCROLL_DELAY);
+    } else {
+      // Scroll hacia arriba - mostrar inmediatamente
+      navbar.classList.remove('hidden');
+    }
+    
+    lastScroll = currentScroll;
+  });
+
+  // Mostrar al hacer hover (opcional)
+  navbar.addEventListener('mouseenter', () => {
+    clearTimeout(scrollTimeout);
+    navbar.classList.remove('hidden');
+  });
+		const contactModal = document.getElementById('contactModal');
+const closeContact = document.querySelector('.close-contact');
+const yesBtn = document.getElementById('yesBtn');
+const noBtn = document.getElementById('noBtn');
+
+// Función para abrir el modal de contacto
+function openContactModal() {
+  contactModal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+// Cerrar modal
+closeContact.addEventListener('click', () => {
+  contactModal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+});
+
+// Cerrar al hacer clic fuera
+contactModal.addEventListener('click', (e) => {
+  if (e.target === contactModal) {
+    contactModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+});
+
+// Botones SÍ/NO
+yesBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.location.href = "https://ejemplo.com/gracias.html"; // Cambia esta URL
+});
+
+noBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+  contactModal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+});
+
+// Añade esto a tu botón de contacto en el navbar:
+document.querySelector('a[href="#contacto"]').addEventListener('click', (e) => {
+  e.preventDefault();
+  openContactModal();
+});
+</script>
+	<div class="video-modal" id="videoModal">
+  <div class="video-modal-content">
+    <span class="close-modal" onclick="closeVideoModal()">&times;</span>
+    <iframe id="videoFrame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+	<script>
+  // Función para abrir el modal con el video
+  function openVideoModal(youtubeUrl) {
+    const videoModal = document.getElementById('videoModal');
+    const videoFrame = document.getElementById('videoFrame');
+    
+    // Extraer el ID del video
+    const videoId = youtubeUrl.split('v=')[1].split('&')[0];
+    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+    
+    // Configurar el iframe
+    videoFrame.src = embedUrl;
+    
+    // Mostrar el modal
+    videoModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  // Función para cerrar el modal
+  function closeVideoModal() {
+    const videoModal = document.getElementById('videoModal');
+    const videoFrame = document.getElementById('videoFrame');
+    
+    // Detener el video
+    videoFrame.src = '';
+    
+    // Ocultar el modal
+    videoModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  // Cerrar al hacer clic fuera del video
+  window.addEventListener('click', function(event) {
+    if (event.target === document.getElementById('videoModal')) {
+      closeVideoModal();
+    }
+  });
+</script>
+	<script>
+// Modal de Contacto - Versión simplificada y corregida
+document.addEventListener('DOMContentLoaded', function() {
+  const contactModal = document.getElementById('contactModal');
+  const contactoBtn = document.getElementById('contactoBtn');
+  const closeBtn = document.querySelector('.contact-modal .close-modal');
+  const yesBtn = document.getElementById('yesBtn');
+  const noBtn = document.getElementById('noBtn');
+
+  // Abrir modal
+  contactoBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    contactModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+
+  // Cerrar modal
+  function closeModal() {
+    contactModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+  }
+
+  // Event listeners para cerrar
+  closeBtn.addEventListener('click', closeModal);
+  noBtn.addEventListener('click', closeModal);
+
+  // Cerrar al hacer clic fuera del contenido
+  contactModal.addEventListener('click', function(e) {
+    if (e.target === contactModal) {
+      closeModal();
+    }
+  });
+
+  // Cerrar con ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && contactModal.style.display === 'flex') {
+      closeModal();
+    }
+  });
+
+  // Acción para el botón SÍ
+  yesBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (document.getElementById('contactForm').checkValidity()) {
+      // Aquí iría el envío real del formulario
+      console.log('Formulario enviado');
+      window.location.href = "https://ejemplo.com/gracias.html";
+    } else {
+      alert('Por favor completa todos los campos requeridos');
+    }
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  const contactModal = document.getElementById('contactModal');
+  const contactoBtn = document.getElementById('contactoBtn');
+  const closeBtn = document.querySelector('.close-modal');
+  const yesBtn = document.getElementById('yesBtn');
+  const noBtn = document.getElementById('noBtn');
+
+  // Abrir modal con animación
+  contactoBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    contactModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+
+  // Cerrar modal con animación
+  function closeModal() {
+    contactModal.classList.remove('active');
+    setTimeout(() => {
+      document.body.style.overflow = 'auto';
+    }, 300); // Espera a que termine la animación
+  }
+
+  // Event listeners para cerrar
+  closeBtn.addEventListener('click', closeModal);
+  noBtn.addEventListener('click', closeModal);
+
+  // Cerrar al hacer clic fuera del contenido
+  contactModal.addEventListener('click', function(e) {
+    if (e.target === contactModal) {
+      closeModal();
+    }
+  });
+
+  // Cerrar con ESC
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && contactModal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  // Acción para el botón SÍ
+  yesBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    if (document.getElementById('contactForm').checkValidity()) {
+      // Aquí iría el envío real del formulario
+      console.log('Formulario enviado');
+      window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSdhu0V3qfXu7C-T-E1VsBRU8zFiOl-aYv4mRMrgS0Dl9ACmlw/viewform?usp=header";
+    } else {
+      alert('Por favor completa todos los campos requeridos');
+    }
+  });
+});
+
+// El resto de tu JavaScript (carrusel, galería, etc.) puede mantenerse igual
+</script>
+	<div class="contact-modal" id="contactModal">
+  <div class="contact-modal-content">
+    <span class="close-modal">&times;</span>
+    
+    <div class="contact-header">
+      <img src="img/Doomverse.png" alt="Doomverse" class="contact-logo">
+      <h3>CONTACTO</h3>
+    </div>
+    
+    <div class="contact-info">
+      <p>¿Tienes sugerencias o preguntas?</p>
+      <p><i class="icon-email"></i> matthos.wolf@gmail.com</p>
+    </div>
+    
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder=" " required>
+        <label for="name">Nombre</label>
+      </div>
+      
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder=" " required>
+        <label for="email">Correo electrónico</label>
+      </div>
+      
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="consent" name="consent" required>
+        <label for="consent">Acepto que me contacten</label>
+      </div>
+      
+      <div class="form-help">
+        <p>¿Me ayudarías a mejorar este sitio?</p>
+        <div class="help-buttons">
+          <button type="button" class="btn-yes" id="yesBtn">SÍ</button>
+          <button type="button" class="btn-no" id="noBtn">NO</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
